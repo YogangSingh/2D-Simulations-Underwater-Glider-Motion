@@ -21,11 +21,11 @@ theta0 = 0.4;               % Initial pitch angle
 
 g = 9.816;                  % Acceleration due to gravity
 I3 = eye(3);                % Identity matrix (3x3)
-Z3 = zeros(3);              % Zero matric (3x3)
+Z3 = zeros(3);              % Zero matrix (3x3)
 
-i = [1 0 0]';               % Unit vector alog earth frame x-axis
-j = [0 1 0]';               % Unit vector alog earth frame y-axis
-k = [0 0 1]';               % Unit vector alog earth frame z-axis
+i = [1 0 0]';               % Unit vector along earth frame x-axis
+j = [0 1 0]';               % Unit vector along earth frame y-axis
+k = [0 0 1]';               % Unit vector along earth frame z-axis
 
 %% Mass Properties
 
@@ -52,7 +52,7 @@ m3 = M(3,3);
 j1 = 4;                         % Inertia term  
 j2 = 12;                        % Inertia term
 j3 = 11;                        % Inertia term
-J = diag([j1, j2, j3]);         % Total intertia
+J = diag([j1, j2, j3]);         % Total inertia
 Jinv = inv(J);
 
 %% Force and Moment Coefficients 
