@@ -67,7 +67,7 @@ rb_c = [ 0      -rb(3)  rb(2)
         -rb(2)  rb(1)   0  ]; 
     
     
-%% Transformation matrices 
+%% Transformation matrix
 
 R = [cos(yaw)*cos(theta)    (-sin(yaw)*cos(phi) + cos(yaw)*sin(theta)*sin(phi)) (sin(yaw)*sin(phi) + cos(yaw)*cos(phi)*sin(theta))
      sin(yaw)*cos(theta)    (cos(yaw)*cos(phi) + sin(phi)*sin(theta)*sin(yaw))  (-cos(yaw)*sin(phi) + sin(theta)*sin(yaw)*cos(phi))
@@ -120,7 +120,7 @@ end
 
 rb_dot = [0 0 0]';                                           % rb_dot
 
-%% Momentum Matrices
+%% Momentum Matrix
 
 Pb = mb*(v + cross(Omega,rb) + rb_dot);                     % Linear momentum of ballast mass
 
